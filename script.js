@@ -6,3 +6,12 @@ title, director, budget
 Metodas: 
 wasExpensive() - jeigu filmo budget bus didesnę nei 100 000 000 mln USD, tada gražins true, kitu atveju false 
 ------------------------------------------------------------------------------------------------------ */
+class Movie {
+  constructor(title, director, budget) {
+    this.title = title;
+    this.director = director;
+    this.budget = budget;
+  }
+}
+
+const movie = new Movie("It", "Andy Muschietti", 35000000);
