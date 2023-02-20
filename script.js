@@ -12,6 +12,10 @@ class Movie {
     this.director = director;
     this.budget = budget;
   }
+  wasExpensive() {
+    return this.budget > 100000000 ? true : false;
+  }
 }
 
 const movie = new Movie("It", "Andy Muschietti", 35000000);
+console.log(movie.wasExpensive());
